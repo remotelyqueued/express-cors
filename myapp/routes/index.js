@@ -5,11 +5,13 @@ var router = express.Router();
 router.get('/', function (req, res, next) {
     res.render('index', { title: 'Express' });
 });
+/* POST home */
 router.post('/', (req, res) => {
-    res.send('Got a POST request');
+    res.send('Got a POST request at /');
 });
+/* PUT home */
 router.put('/', (req, res) => {
-    res.send('Got a PUT request at /user');
+    res.send('Got a PUT request at /');
 });
 
 module.exports = router;

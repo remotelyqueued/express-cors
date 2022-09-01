@@ -1,13 +1,12 @@
 var express = require('express');
 var router = express.Router();
 
-var userJSON = require('./test.json');
+var userJSON = require('../users/user.json');
 
-/* GET users listing. */
-router.get('/', function (req, res, next) {
-    res.send(userJSON);
+// in app.js set route "/users"
+// in users.js route is "/"
+router.all('/', function (req, res, next) {
+    res.json(userJSON);
 });
-
-
 
 module.exports = router;

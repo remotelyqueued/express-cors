@@ -1,7 +1,11 @@
 # express-cors
 
+# linux
 cd myapp
 DEBUG=myapp:* npm start
+
+# windows powershell
+$env:DEBUG='myapp:*'; npm start
 
 
 # currently working in routes folder
