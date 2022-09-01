@@ -1,13 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
-var userJSON = require('./test.json');
+var userJSON = require('../public/json/test.json');
 
 /* GET users listing. */
-router.get('/', function (req, res, next) {
+router.post('/', function (req, res, next) {
     res.send(userJSON);
 });
-
-
 
 module.exports = router;
