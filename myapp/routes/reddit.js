@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
-var redditJSON = require('../../../../../data-sets/reddit.json');
-var dataJSON = require('../../../../../data-sets/dataisbeautiful.json');
-var superJSON = require('../../../../../data-sets/superstonk.json');
-var webdevJSON = require('../../../../../data-sets/webdev.json');
+var redditJSON = require('../data/reddit.json');
+var dataJSON = require('../data/dataisbeautiful.json');
+var superJSON = require('../data/superstonk.json');
+var webdevJSON = require('../data/webdev.json');
 
 // in app.js set route "/users"
 // in users.js route is "/"

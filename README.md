@@ -8,10 +8,8 @@ DEBUG=myapp:* npm start
 $env:DEBUG='myapp:*'; npm start
 
 
-# currently working in routes folder
+# currently working routes
 
 # localhost:3000/images/boat.jpg
-# localhost:3000/json/test.json
 # localhost:3000/users
-
-# express.static app.js
+# localhost:3000/reddit
