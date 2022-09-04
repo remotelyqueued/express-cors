@@ -9,9 +9,15 @@ var usersRouter = require('./routes/users');
 var redditRouter = require('./routes/reddit');
 
 // cors
+var corsOptions = {
+    credentials: true,
+    maxAge: 86400,
+    origin: true,
+};
+
 var cors = require('cors');
 var app = express();
-app.use(cors());
+app.use(cors(corsOptions));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
