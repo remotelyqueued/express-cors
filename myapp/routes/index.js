@@ -6,7 +6,9 @@ router.get('/', function (req, res, next) {
     res.render('index', { title: 'Express' });
 });
 /* POST home */
-router.post('/', (req, res) => {
+router.post('/', express.json(), (req, res) => {
+    console.log('Made it here...');
+    console.log(req.body);
     res.send('Got a POST request at /');
 });
 /* PUT home */
