@@ -1,15 +1,16 @@
 # express-cors
 
-# linux
+## linux
+
 cd myapp
-DEBUG=myapp:* npm start
+DEBUG=myapp:\* npm start
 
-# windows powershell
-$env:DEBUG='myapp:*'; npm start
+## windows powershell
 
+$env:DEBUG='myapp:\*'; npm start
 
-# currently working routes
+-   currently working routes
 
-# localhost:3000/images/boat.jpg
-# localhost:3000/users
-# localhost:3000/reddit
+-   localhost:3000/images/boat.jpg
+-   localhost:3000/users
+-   localhost:3000/reddit
