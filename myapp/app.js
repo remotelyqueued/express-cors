@@ -14,9 +14,10 @@ var corsOptions = {
     maxAge: 86400,
     origin: true,
 };
-
 var cors = require('cors');
+
 var app = express();
+
 app.use(cors(corsOptions));
 
 // view engine setup
