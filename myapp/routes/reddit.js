@@ -6,8 +6,8 @@ var dataJSON = require('../data/dataisbeautiful.json');
 var superJSON = require('../data/superstonk.json');
 var webdevJSON = require('../data/webdev.json');
 
-// in app.js set route "/users"
-// in users.js route is "/"
+// in app.js set route "/reddit"
+// in reddit.js route is "/"
 router.all('/', function (req, res, next) {
     res.json({ redditJSON, dataJSON, superJSON, webdevJSON });
 });

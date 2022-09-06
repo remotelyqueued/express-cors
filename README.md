@@ -2,14 +2,16 @@
 
 ## linux
 
-cd myapp
+myapp
+
+
 DEBUG=myapp:\* npm start
 
-## windows powershell
+## windows
 
 $env:DEBUG='myapp:\*'; npm start
 
--   currently working routes
+currently working routes:
 
 -   localhost:3000/images/boat.jpg
 -   localhost:3000/users
