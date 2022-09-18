@@ -1,14 +1,13 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-// from fetch request need to set content-type header
-
+// need to set content-type header
+// app.js /
 router.get('/', function (req, res, next) {
     res.render('index', { title: 'Express' });
 });
 
 router.post('/', (req, res) => {
-    console.log(req.body);
     res.send('Got a POST request at /');
 });
 

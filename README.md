@@ -4,12 +4,21 @@
 
 myapp
 
-
+```
 DEBUG=myapp:\* npm start
+```
 
 ## windows
 
+```
 $env:DEBUG='myapp:\*'; npm start
+```
+
+or
+
+```
+npm run devstart
+```
 
 currently working routes:
 
