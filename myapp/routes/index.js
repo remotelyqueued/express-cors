@@ -8,11 +8,11 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/', (req, res) => {
-    res.send('Got a POST request at /');
+    res.send('POST request at /');
 });
 
 router.put('/', (req, res) => {
-    res.send('Got a PUT request at /');
+    res.send('PUT request at /');
 });
 
 module.exports = router;

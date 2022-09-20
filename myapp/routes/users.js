@@ -11,11 +11,11 @@ router.get('/', function (req, res, next) {
 
 // https://www.npmjs.com/package/multer
 // only handles multipart form data
-// solutions I found online for uploading image suggest sending as formdata
 router.post('/', function (req, res, next) {
     console.log('1.', req.body);
     console.log('2.', req.files);
     console.log('3.', req.header('Content-Type'));
+    console.log('4.', req.query.width);
     res.send('User saved');
 });
 
