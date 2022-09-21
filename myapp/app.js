@@ -4,9 +4,7 @@ const express = require('express');
 const logger = require('morgan');
 const path = require('path');
 const cors = require('cors');
-// parsing multi part form data
-// const multer = require('multer');
-// const upload = multer();
+
 
 // routes
 const indexRouter = require('./routes/index');
@@ -38,20 +36,6 @@ app.use(logger('dev'));
 
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-// need multer to parse req.body
-// works with 3.network request -> formdata
-// added fields not defined show in req.files
-// app.use(
-//     '/users',
-//     upload.fields([
-//         { name: 'name', maxCount: 1 },
-//         { name: 'surname', maxCount: 1 },
-//         { name: 'picture', maxCount: 1 },
-//     ]),
-//     usersRouter
-// );
-// app.use('/users', upload.single('image'), usersRouter);
 
 app.use('/', indexRouter);
 app.use('/reddit', redditRouter);
