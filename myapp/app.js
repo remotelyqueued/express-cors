@@ -5,7 +5,6 @@ const logger = require('morgan');
 const path = require('path');
 const cors = require('cors');
 
-
 // routes
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
